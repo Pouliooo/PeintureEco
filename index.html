@@ -12,7 +12,7 @@
   <header>
     <div class="header-inner">
       <a class="logo" href="index.html">
-        <img src="logo.jpg" alt="Peintures Ecodurables" />
+        <img src="images/1.%20Accueil/1_Logo%20PED.png" alt="Peintures Ecodurables" />
       </a>
       <button class="menu-toggle" aria-label="Menu" onclick="toggleMenu()">
         <span></span><span></span><span></span>
@@ -20,6 +20,7 @@
       <nav id="main-nav">
         <ul>
           <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="realisations.html">Nos Réalisations</a></li>
           <li><a href="la-societe.html">La Société</a></li>
           <li><a href="nos-engagements.html">Nos Engagements</a></li>
           <li><a href="services.html">Services</a></li>
@@ -106,9 +107,19 @@
           <a href="nos-engagements.html" class="btn btn-primary" style="margin-top: 2rem;">Tous nos engagements</a>
         </div>
         <div>
-          <div class="photo-placeholder" style="height: 320px;">
-            <span>📷</span>
-            Photo de chantier ou équipe
+          <div class="before-after">
+            <div class="before-after__item">
+              <img src="images/2.%20Monument%20historique/1.%20Eglise%20St-Jacques-Le-Majeur%20Dettwiller%202019_21/1_Dettwiller_Avant.jpg" alt="Avant restauration" onclick="openLightbox(this)" />
+              <span class="before-after__label">Avant</span>
+            </div>
+            <div class="before-after__item">
+              <img src="images/2.%20Monument%20historique/1.%20Eglise%20St-Jacques-Le-Majeur%20Dettwiller%202019_21/9_Dettwiller_Apres.jpg" alt="Après restauration" onclick="openLightbox(this)" />
+              <span class="before-after__label">Après</span>
+            </div>
+          </div>
+          <p style="font-size: 0.8rem; color: var(--color-text-light); margin-top: 0.5rem; text-align: center;">Église St-Jacques-Le-Majeur, Dettwiller (2019–2021)</p>
+          <div style="text-align:center; margin-top: 0.8rem;">
+            <a href="realisations.html" style="font-size: 0.85rem; color: var(--color-primary); font-weight: 700; text-decoration: none; letter-spacing: 0.05em;">Voir toutes nos réalisations →</a>
           </div>
         </div>
       </div>
@@ -118,23 +129,20 @@
   <!-- CLIENTS -->
   <section class="bg-alt">
     <div class="container" style="text-align: center;">
-      <p class="section-tag">Ils nous font confiance</p>
-      <h2 class="section-title">Nos clients</h2>
+      <p class="section-tag">Ils nous ont déjà fait confiance</p>
+      <h2 class="section-title">Nos partenaires &amp; labels</h2>
       <div class="divider center"></div>
-      <p style="color: var(--color-text-light); max-width: 700px; margin: 0 auto 2rem; font-size: 0.95rem;">
-        Nous intervenons pour une clientèle variée, des institutions publiques aux particuliers, en passant
-        par les architectes du patrimoine et les collectivités territoriales.
-      </p>
-      <div style="display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: center; max-width: 800px; margin: 0 auto;">
-        <span style="background: var(--color-white); padding: 0.5rem 1.2rem; font-size: 0.85rem; color: var(--color-text-light); box-shadow: 0 1px 4px rgba(0,0,0,0.08);">DRAC</span>
-        <span style="background: var(--color-white); padding: 0.5rem 1.2rem; font-size: 0.85rem; color: var(--color-text-light); box-shadow: 0 1px 4px rgba(0,0,0,0.08);">Architectes du Patrimoine</span>
-        <span style="background: var(--color-white); padding: 0.5rem 1.2rem; font-size: 0.85rem; color: var(--color-text-light); box-shadow: 0 1px 4px rgba(0,0,0,0.08);">Architectes des Bâtiments de France</span>
-        <span style="background: var(--color-white); padding: 0.5rem 1.2rem; font-size: 0.85rem; color: var(--color-text-light); box-shadow: 0 1px 4px rgba(0,0,0,0.08);">Monuments Historiques</span>
-        <span style="background: var(--color-white); padding: 0.5rem 1.2rem; font-size: 0.85rem; color: var(--color-text-light); box-shadow: 0 1px 4px rgba(0,0,0,0.08);">Collectivités territoriales</span>
-        <span style="background: var(--color-white); padding: 0.5rem 1.2rem; font-size: 0.85rem; color: var(--color-text-light); box-shadow: 0 1px 4px rgba(0,0,0,0.08);">Conseils de Fabriques</span>
-        <span style="background: var(--color-white); padding: 0.5rem 1.2rem; font-size: 0.85rem; color: var(--color-text-light); box-shadow: 0 1px 4px rgba(0,0,0,0.08);">Paroisses</span>
-        <span style="background: var(--color-white); padding: 0.5rem 1.2rem; font-size: 0.85rem; color: var(--color-text-light); box-shadow: 0 1px 4px rgba(0,0,0,0.08);">Syndics de copropriétés</span>
-        <span style="background: var(--color-white); padding: 0.5rem 1.2rem; font-size: 0.85rem; color: var(--color-text-light); box-shadow: 0 1px 4px rgba(0,0,0,0.08);">Particuliers</span>
+      <div class="partners-strip">
+        <img class="partner-logo" src="images/1.%20Accueil/2_Logo%20FFB.png" alt="FFB" title="Fédération Française du Bâtiment" />
+        <img class="partner-logo" src="images/1.%20Accueil/2_Logo%20FREMAA.png" alt="FREMAA" title="Fédération Régionale des Métiers d'Art" />
+        <img class="partner-logo" src="images/1.%20Accueil/3_Logo%20M%C3%A9tiers%20d'Art.jpg" alt="Métiers d'Art" title="Métiers d'Art" />
+        <img class="partner-logo" src="images/1.%20Accueil/4_Logo%20CMA.jpg" alt="CMA" title="Chambre de Métiers et de l'Artisanat" />
+        <img class="partner-logo" src="images/1.%20Accueil/5_Logo%20Batisseurs%20de%20France.png" alt="Bâtisseurs de France" title="Bâtisseurs de France" />
+        <img class="partner-logo" src="images/1.%20Accueil/6_Logo%20ASMA.jpg" alt="ASMA" title="ASMA" />
+        <img class="partner-logo" src="images/1.%20Accueil/7_Logo%20QUALIBAT.png" alt="Qualibat" title="Qualibat" />
+        <img class="partner-logo" src="images/1.%20Accueil/8_Logo%20Ecod%C3%A9fis.png" alt="Écodéfis" title="Écodéfis" />
+        <img class="partner-logo" src="images/1.%20Accueil/9_Logo%20Alsace.png" alt="Alsace" title="Alsace" />
+        <img class="partner-logo" src="images/1.%20Accueil/10_Logo%20monument%20historique.png" alt="Monuments Historiques" title="Monuments Historiques" />
       </div>
     </div>
   </section>
@@ -164,10 +172,39 @@
     </div>
   </footer>
 
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightboxOnBg(event)">
+    <button class="lightbox__close" onclick="closeLightbox()">✕</button>
+    <button class="lightbox__nav lightbox__prev" onclick="lightboxNav(-1)">&#8249;</button>
+    <img class="lightbox__img" id="lightbox-img" src="" alt="" />
+    <button class="lightbox__nav lightbox__next" onclick="lightboxNav(1)">&#8250;</button>
+    <p class="lightbox__caption" id="lightbox-caption"></p>
+  </div>
+
   <script>
-    function toggleMenu() {
-      document.getElementById('main-nav').classList.toggle('open');
+    function toggleMenu() { document.getElementById('main-nav').classList.toggle('open'); }
+    let allImgs = [], currentIdx = 0;
+    function openLightbox(img) {
+      allImgs = Array.from(document.querySelectorAll('.before-after__item img'));
+      currentIdx = allImgs.indexOf(img);
+      showLightboxImg();
+      document.getElementById('lightbox').classList.add('open');
+      document.body.style.overflow = 'hidden';
     }
+    function showLightboxImg() {
+      const img = allImgs[currentIdx];
+      document.getElementById('lightbox-img').src = img.src;
+      document.getElementById('lightbox-caption').textContent = img.alt;
+    }
+    function closeLightbox() { document.getElementById('lightbox').classList.remove('open'); document.body.style.overflow = ''; }
+    function closeLightboxOnBg(e) { if (e.target === document.getElementById('lightbox')) closeLightbox(); }
+    function lightboxNav(dir) { currentIdx = (currentIdx + dir + allImgs.length) % allImgs.length; showLightboxImg(); }
+    document.addEventListener('keydown', e => {
+      if (!document.getElementById('lightbox').classList.contains('open')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowRight') lightboxNav(1);
+      if (e.key === 'ArrowLeft') lightboxNav(-1);
+    });
   </script>
 </body>
 </html>

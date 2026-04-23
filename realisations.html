@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toutes nos réalisations – Peintures Ecodurables</title>
+  <meta name="description" content="Galerie complète des réalisations de Peintures Ecodurables : monuments historiques, patrimoine ancien, dorures, maisons alsaciennes." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <img src="images/1.%20Accueil/1_Logo%20PED.png" alt="Peintures Ecodurables" />
+      </a>
+      <button class="menu-toggle" aria-label="Menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="realisations.html" class="active">Nos Réalisations</a></li>
+          <li><a href="la-societe.html">La Société</a></li>
+          <li><a href="nos-engagements.html">Nos Engagements</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="references.html">Références</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <h1>Nos Réalisations</h1>
+    <p>Galerie complète de nos chantiers en Alsace et Grand Est</p>
+  </div>
+
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="index.html">Accueil</a>
+      <span class="sep">›</span>
+      <a href="references.html">Références</a>
+      <span class="sep">›</span>
+      <span>Toutes les réalisations</span>
+    </div>
+  </div>
+
+  <!-- FILTRES -->
+  <section style="padding: 2rem 2rem 0; background: var(--color-bg);">
+    <div class="container">
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">Tout afficher</button>
+        <button class="filter-btn" data-filter="monument">Monuments Historiques</button>
+        <button class="filter-btn" data-filter="patrimoine">Patrimoine Ancien</button>
+        <button class="filter-btn" data-filter="maison">Maison Alsacienne</button>
+        <button class="filter-btn" data-filter="peinture">Peinture Traditionnelle</button>
+        <button class="filter-btn" data-filter="dorure">Dorure</button>
+        <button class="filter-btn" data-filter="sondage">Sondage &amp; Étude</button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <!-- ── MONUMENTS HISTORIQUES ── -->
+      <div class="gallery-category" data-cat="monument">
+        <h3>Monuments Historiques</h3>
+
+        <div class="gallery-project">
+          <h4>Église St-Jacques-Le-Majeur – Dettwiller (2019–2021)</h4>
+          <div class="gallery-grid">
+            <img src="images/2.%20Monument%20historique/1.%20Eglise%20St-Jacques-Le-Majeur%20Dettwiller%202019_21/1_Dettwiller_Avant.jpg" alt="Dettwiller – Avant 1" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/1.%20Eglise%20St-Jacques-Le-Majeur%20Dettwiller%202019_21/9_Dettwiller_Apres.jpg" alt="Dettwiller – Après 1" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/1.%20Eglise%20St-Jacques-Le-Majeur%20Dettwiller%202019_21/2_Dettwiller_Avant.jpg" alt="Dettwiller – Avant 2" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/1.%20Eglise%20St-Jacques-Le-Majeur%20Dettwiller%202019_21/10_Dettwiller_Apres.jpg" alt="Dettwiller – Après 2" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/1.%20Eglise%20St-Jacques-Le-Majeur%20Dettwiller%202019_21/3_Dettwiller_Avant.jpg" alt="Dettwiller – Avant 3" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/1.%20Eglise%20St-Jacques-Le-Majeur%20Dettwiller%202019_21/11_Dettwiller_Apres.jpg" alt="Dettwiller – Après 3" onclick="openLightbox(this)" />
+          </div>
+        </div>
+
+        <div class="gallery-project">
+          <h4>Église St-Arbogast – Surbourg (2016–2018)</h4>
+          <div class="gallery-grid">
+            <img src="images/2.%20Monument%20historique/2.%20Eglise%20St-Arbogast%20Surbourg%202016_18/1_Surbourg_Avant.jpg" alt="Surbourg – Avant 1" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/2.%20Eglise%20St-Arbogast%20Surbourg%202016_18/6_Surbourg_Apres.jpg" alt="Surbourg – Après 1" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/2.%20Eglise%20St-Arbogast%20Surbourg%202016_18/2_Surbourg_Avant.jpg" alt="Surbourg – Avant 2" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/2.%20Eglise%20St-Arbogast%20Surbourg%202016_18/7_Surbourg_Apres.jpg" alt="Surbourg – Après 2" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/2.%20Eglise%20St-Arbogast%20Surbourg%202016_18/3_Surbourg_Avant.jpg" alt="Surbourg – Avant 3" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/2.%20Eglise%20St-Arbogast%20Surbourg%202016_18/8_Surbourg_Apres.jpg" alt="Surbourg – Après 3" onclick="openLightbox(this)" />
+          </div>
+        </div>
+
+        <div class="gallery-project">
+          <h4>Chapelle d'Otterswiller (2016–2018)</h4>
+          <div class="gallery-grid">
+            <img src="images/2.%20Monument%20historique/3.%20Chapelle%20Otterswiller%202016_18/1_Otterswiller_Avant.jpg" alt="Otterswiller – Avant 1" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/3.%20Chapelle%20Otterswiller%202016_18/7_Otterswiller_Apres.jpg" alt="Otterswiller – Après 1" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/3.%20Chapelle%20Otterswiller%202016_18/2_Otterswiller_Avant.jpg" alt="Otterswiller – Avant 2" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/3.%20Chapelle%20Otterswiller%202016_18/8_Otterswiller_Apres.jpg" alt="Otterswiller – Après 2" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/3.%20Chapelle%20Otterswiller%202016_18/3_Otterswiller_Avant.jpg" alt="Otterswiller – Avant 3" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/3.%20Chapelle%20Otterswiller%202016_18/9_Otterswiller_Apres.jpg" alt="Otterswiller – Après 3" onclick="openLightbox(this)" />
+          </div>
+        </div>
+
+        <div class="gallery-project">
+          <h4>Salon de l'Impératrice – Palais du Rhin, Strasbourg (2017)</h4>
+          <div class="gallery-grid">
+            <img src="images/2.%20Monument%20historique/4.%20Salon%20de%20l'Imp%C3%A9ratrice%20du%20Palais%20de%20Rhin%20Strasbourg%202017/1_Imperatrice_Avant.jpg" alt="Impératrice – Avant 1" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/4.%20Salon%20de%20l'Imp%C3%A9ratrice%20du%20Palais%20de%20Rhin%20Strasbourg%202017/4_Imperatrice_Apres.jpg" alt="Impératrice – Après 1" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/4.%20Salon%20de%20l'Imp%C3%A9ratrice%20du%20Palais%20de%20Rhin%20Strasbourg%202017/2_Imperatrice_Avant.jpg" alt="Impératrice – Avant 2" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/4.%20Salon%20de%20l'Imp%C3%A9ratrice%20du%20Palais%20de%20Rhin%20Strasbourg%202017/5_Imperatrice_Apres.jpg" alt="Impératrice – Après 2" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/4.%20Salon%20de%20l'Imp%C3%A9ratrice%20du%20Palais%20de%20Rhin%20Strasbourg%202017/3_Imperatrice_Avant.jpg" alt="Impératrice – Avant 3" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/4.%20Salon%20de%20l'Imp%C3%A9ratrice%20du%20Palais%20de%20Rhin%20Strasbourg%202017/6_Imperatrice_Apres.jpg" alt="Impératrice – Après 3" onclick="openLightbox(this)" />
+          </div>
+        </div>
+
+        <div class="gallery-project">
+          <h4>Palais U – Strasbourg (2014–2015)</h4>
+          <div class="gallery-grid">
+            <img src="images/2.%20Monument%20historique/5.%20Palais%20U%20Strasbourg%202014_15/1_Palais%20U_Avant.jpg" alt="Palais U – Avant 1" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/5.%20Palais%20U%20Strasbourg%202014_15/8_Palais%20U_Apres.jpg" alt="Palais U – Après 1" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/5.%20Palais%20U%20Strasbourg%202014_15/2_Palais%20U_Avant.jpg" alt="Palais U – Avant 2" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/5.%20Palais%20U%20Strasbourg%202014_15/9_Palais%20U_Apres.jpg" alt="Palais U – Après 2" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/5.%20Palais%20U%20Strasbourg%202014_15/5_Palais%20U_Pendant.jpg" alt="Palais U – Pendant" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/5.%20Palais%20U%20Strasbourg%202014_15/10_Palais%20U_Apres.jpg" alt="Palais U – Après 3" onclick="openLightbox(this)" />
+          </div>
+        </div>
+
+        <div class="gallery-project">
+          <h4>BNU – Strasbourg (2014)</h4>
+          <div class="gallery-grid">
+            <img src="images/2.%20Monument%20historique/6.%20BNU%20Strasbourg%202014/1_BNU_Avant.jpg" alt="BNU – Avant 1" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/6.%20BNU%20Strasbourg%202014/7_BNU_Apres.jpg" alt="BNU – Après 1" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/6.%20BNU%20Strasbourg%202014/2_BNU_Avant.jpg" alt="BNU – Avant 2" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/6.%20BNU%20Strasbourg%202014/8_BNU_Apres.jpg" alt="BNU – Après 2" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/6.%20BNU%20Strasbourg%202014/3_BNU_Avant.jpg" alt="BNU – Avant 3" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/6.%20BNU%20Strasbourg%202014/9_BNU_Apres.jpg" alt="BNU – Après 3" onclick="openLightbox(this)" />
+          </div>
+        </div>
+
+        <div class="gallery-project">
+          <h4>Église d'Uttenheim (2013)</h4>
+          <div class="gallery-grid">
+            <img src="images/2.%20Monument%20historique/7.%20Eglise%20Uttenheim%202013/1_Uttenheim_Avant.jpg" alt="Uttenheim – Avant 1" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/7.%20Eglise%20Uttenheim%202013/5_Uttenheim_Apres.jpg" alt="Uttenheim – Après 1" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/7.%20Eglise%20Uttenheim%202013/2_Uttenheim_Avant.jpg" alt="Uttenheim – Avant 2" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/7.%20Eglise%20Uttenheim%202013/6_Uttenheim_Apres.jpg" alt="Uttenheim – Après 2" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/7.%20Eglise%20Uttenheim%202013/3_Uttenheim_Avant.jpg" alt="Uttenheim – Avant 3" onclick="openLightbox(this)" />
+            <img src="images/2.%20Monument%20historique/7.%20Eglise%20Uttenheim%202013/7_Uttenheim_Apres.jpg" alt="Uttenheim – Après 3" onclick="openLightbox(this)" />
+          </div>
+        </div>
+      </div>
+
+      <!-- ── PATRIMOINE ANCIEN ── -->
+      <div class="gallery-category" data-cat="patrimoine">
+        <h3>Patrimoine Ancien</h3>
+
+        <div class="gallery-project">
+          <h4>Chapelle de Marmoutier (2020)</h4>
+          <div class="gallery-grid">
+            <img src="images/3.%20Patrimoine%20ancien/1.%20Chapelle%20Marmoutier%202020/1_Marmoutier_Avant.jpg" alt="Marmoutier – Avant 1" onclick="openLightbox(this)" />
+            <img src="images/3.%20Patrimoine%20ancien/1.%20Chapelle%20Marmoutier%202020/5_Marmoutier_Apres.jpg" alt="Marmoutier – Après 1" onclick="openLightbox(this)" />
+            <img src="images/3.%20Patrimoine%20ancien/1.%20Chapelle%20Marmoutier%202020/2_Marmoutier_Avant.jpg" alt="Marmoutier – Avant 2" onclick="openLightbox(this)" />
+            <img src="images/3.%20Patrimoine%20ancien/1.%20Chapelle%20Marmoutier%202020/6_Marmoutier_Apres.jpg" alt="Marmoutier – Après 2" onclick="openLightbox(this)" />
+            <img src="images/3.%20Patrimoine%20ancien/1.%20Chapelle%20Marmoutier%202020/3_Marmoutier_Avant.jpg" alt="Marmoutier – Avant 3" onclick="openLightbox(this)" />
+            <img src="images/3.%20Patrimoine%20ancien/1.%20Chapelle%20Marmoutier%202020/7_Marmoutier_Apres.jpg" alt="Marmoutier – Après 3" onclick="openLightbox(this)" />
+          </div>
+        </div>
+
+        <div class="gallery-project">
+          <h4>Église d'Achenheim (2019–2020)</h4>
+          <div class="gallery-grid">
+            <img src="images/3.%20Patrimoine%20ancien/2.%20Eglise%20Achenheim%202019_20/1_Achenheim_Avant.jpg" alt="Achenheim – Avant 1" onclick="openLightbox(this)" />
+            <img src="images/3.%20Patrimoine%20ancien/2.%20Eglise%20Achenheim%202019_20/7_Achenheim_Apres.jpg" alt="Achenheim – Après 1" onclick="openLightbox(this)" />
+            <img src="images/3.%20Patrimoine%20ancien/2.%20Eglise%20Achenheim%202019_20/2_Achenheim_Avant.jpg" alt="Achenheim – Avant 2" onclick="openLightbox(this)" />
+            <img src="images/3.%20Patrimoine%20ancien/2.%20Eglise%20Achenheim%202019_20/8_Achenheim_Apres.jpg" alt="Achenheim – Après 2" onclick="openLightbox(this)" />
+            <img src="images/3.%20Patrimoine%20ancien/2.%20Eglise%20Achenheim%202019_20/3_Achenheim_Avant.jpg" alt="Achenheim – Avant 3" onclick="openLightbox(this)" />
+            <img src="images/3.%20Patrimoine%20ancien/2.%20Eglise%20Achenheim%202019_20/9_Achenheim_Apres.jpg" alt="Achenheim – Après 3" onclick="openLightbox(this)" />
+          </div>
+        </div>
+
+        <div class="gallery-project">
+          <h4>Église de Schillersdorf (2017–2018)</h4>
+          <div class="gallery-grid">
+            <img src="images/3.%20Patrimoine%20ancien/3.%20Eglise%20Schillersdorf%202017_18/1_Schillersdorf_Avant.jpg" alt="Schillersdorf – Avant 1" onclick="openLightbox(this)" />
+            <img src="images/3.%20Patrimoine%20ancien/3.%20Eglise%20Schillersdorf%202017_18/3_Schillersdorf_Apres.jpg" alt="Schillersdorf – Après 1" onclick="openLightbox(this)" />
+            <img src="images/3.%20Patrimoine%20ancien/3.%20Eglise%20Schillersdorf%202017_18/2_Schillersdorf_Avant.jpg" alt="Schillersdorf – Avant 2" onclick="openLightbox(this)" />
+            <img src="images/3.%20Patrimoine%20ancien/3.%20Eglise%20Schillersdorf%202017_18/4_Schillersdorf_Apres.jpg" alt="Schillersdorf – Après 2" onclick="openLightbox(this)" />
+            <img src="images/3.%20Patrimoine%20ancien/3.%20Eglise%20Schillersdorf%202017_18/5_Schillersdorf_Apres.jpg" alt="Schillersdorf – Après 3" onclick="openLightbox(this)" />
+            <img src="images/3.%20Patrimoine%20ancien/3.%20Eglise%20Schillersdorf%202017_18/6_Schillersdorf_Apres.jpg" alt="Schillersdorf – Après 4" onclick="openLightbox(this)" />
+          </div>
+        </div>
+
+        <div class="gallery-project">
+          <h4>Église de Lauterbourg (2014–2016)</h4>
+          <div class="gallery-grid">
+            <img src="images/3.%20Patrimoine%20ancien/4.%20Eglise%20Lauterbourg%202014_16/1_Lauterbourg_Avant.jpg" alt="Lauterbourg – Avant 1" onclick="openLightbox(this)" />
+            <img src="images/3.%20Patrimoine%20ancien/4.%20Eglise%20Lauterbourg%202014_16/4_Lauterbourg_Apres.jpg" alt="Lauterbourg – Après 1" onclick="openLightbox(this)" />
+            <img src="images/3.%20Patrimoine%20ancien/4.%20Eglise%20Lauterbourg%202014_16/2_Lauterbourg_Avant.jpg" alt="Lauterbourg – Avant 2" onclick="openLightbox(this)" />
+            <img src="images/3.%20Patrimoine%20ancien/4.%20Eglise%20Lauterbourg%202014_16/5_Lauterbourg_Apres.jpg" alt="Lauterbourg – Après 2" onclick="openLightbox(this)" />
+            <img src="images/3.%20Patrimoine%20ancien/4.%20Eglise%20Lauterbourg%202014_16/3_Lauterbourg_Avant.jpg" alt="Lauterbourg – Avant 3" onclick="openLightbox(this)" />
+            <img src="images/3.%20Patrimoine%20ancien/4.%20Eglise%20Lauterbourg%202014_16/6_Lauterbourg_Apres.jpg" alt="Lauterbourg – Après 3" onclick="openLightbox(this)" />
+          </div>
+        </div>
+      </div>
+
+      <!-- ── MAISON ALSACIENNE ── -->
+      <div class="gallery-category" data-cat="maison">
+        <h3>Maison Alsacienne</h3>
+
+        <div class="gallery-project">
+          <h4>Fegersheim (2018–2019)</h4>
+          <div class="gallery-grid">
+            <img src="images/4.%20Maison%20alsacienne/1.%20Fegersheim%202018_19/1_Fegersheim_Avant.jpg" alt="Fegersheim – Avant 1" onclick="openLightbox(this)" />
+            <img src="images/4.%20Maison%20alsacienne/1.%20Fegersheim%202018_19/9_Fegersheim_Apres.jpg" alt="Fegersheim – Après 1" onclick="openLightbox(this)" />
+            <img src="images/4.%20Maison%20alsacienne/1.%20Fegersheim%202018_19/2_Fegersheim_Avant.jpg" alt="Fegersheim – Avant 2" onclick="openLightbox(this)" />
+            <img src="images/4.%20Maison%20alsacienne/1.%20Fegersheim%202018_19/10_Fegersheim_Apres.jpg" alt="Fegersheim – Après 2" onclick="openLightbox(this)" />
+            <img src="images/4.%20Maison%20alsacienne/1.%20Fegersheim%202018_19/3_Fegersheim_Pendant.jpg" alt="Fegersheim – Pendant" onclick="openLightbox(this)" />
+            <img src="images/4.%20Maison%20alsacienne/1.%20Fegersheim%202018_19/11_Fegersheim_Apres.jpg" alt="Fegersheim – Après 3" onclick="openLightbox(this)" />
+          </div>
+        </div>
+
+        <div class="gallery-project">
+          <h4>Cour St-Louis – Strasbourg (2018)</h4>
+          <div class="gallery-grid">
+            <img src="images/4.%20Maison%20alsacienne/2.%20Cour%20St-Louis%20Strasbourg%202018/1_St-Louis_Avant.jpg" alt="St-Louis – Avant 1" onclick="openLightbox(this)" />
+            <img src="images/4.%20Maison%20alsacienne/2.%20Cour%20St-Louis%20Strasbourg%202018/5_St-Louis_Apres.jpg" alt="St-Louis – Après 1" onclick="openLightbox(this)" />
+            <img src="images/4.%20Maison%20alsacienne/2.%20Cour%20St-Louis%20Strasbourg%202018/2_St-Louis_Avant.jpg" alt="St-Louis – Avant 2" onclick="openLightbox(this)" />
+            <img src="images/4.%20Maison%20alsacienne/2.%20Cour%20St-Louis%20Strasbourg%202018/6_St-Louis_Apres.jpg" alt="St-Louis – Après 2" onclick="openLightbox(this)" />
+            <img src="images/4.%20Maison%20alsacienne/2.%20Cour%20St-Louis%20Strasbourg%202018/3_St-Louis_Avant.jpg" alt="St-Louis – Avant 3" onclick="openLightbox(this)" />
+            <img src="images/4.%20Maison%20alsacienne/2.%20Cour%20St-Louis%20Strasbourg%202018/7_St-Louis_Apres.jpg" alt="St-Louis – Après 3" onclick="openLightbox(this)" />
+          </div>
+        </div>
+      </div>
+
+      <!-- ── PEINTURE TRADITIONNELLE ── -->
+      <div class="gallery-category" data-cat="peinture">
+        <h3>Peinture Traditionnelle</h3>
+
+        <div class="gallery-project">
+          <h4>Périscolaire Ostwald (2024)</h4>
+          <div class="gallery-grid">
+            <img src="images/5.%20Peinture%20traditionnel/1.%20P%C3%A9riscolaire%20Ostwald%202024/1_Ostwald_P_Avant.jpg" alt="Ostwald – Avant 1" onclick="openLightbox(this)" />
+            <img src="images/5.%20Peinture%20traditionnel/1.%20P%C3%A9riscolaire%20Ostwald%202024/7_Ostwald_P_Apres.jpg" alt="Ostwald – Après 1" onclick="openLightbox(this)" />
+            <img src="images/5.%20Peinture%20traditionnel/1.%20P%C3%A9riscolaire%20Ostwald%202024/2_Ostwald_P_Avant.jpg" alt="Ostwald – Avant 2" onclick="openLightbox(this)" />
+            <img src="images/5.%20Peinture%20traditionnel/1.%20P%C3%A9riscolaire%20Ostwald%202024/8_Ostwald_P_Apres.jpg" alt="Ostwald – Après 2" onclick="openLightbox(this)" />
+            <img src="images/5.%20Peinture%20traditionnel/1.%20P%C3%A9riscolaire%20Ostwald%202024/3_Ostwald_P_Avant.jpg" alt="Ostwald – Avant 3" onclick="openLightbox(this)" />
+            <img src="images/5.%20Peinture%20traditionnel/1.%20P%C3%A9riscolaire%20Ostwald%202024/9_Ostwald_P_Apres.jpg" alt="Ostwald – Après 3" onclick="openLightbox(this)" />
+          </div>
+        </div>
+
+        <div class="gallery-project">
+          <h4>Mairie d'Ostwald (2024)</h4>
+          <div class="gallery-grid">
+            <img src="images/5.%20Peinture%20traditionnel/2.%20Mairie%20Ostwald%202024/1_Ostwald_M_Apres.jpg" alt="Mairie Ostwald – 1" onclick="openLightbox(this)" />
+            <img src="images/5.%20Peinture%20traditionnel/2.%20Mairie%20Ostwald%202024/2_Ostwald_M_Apres.jpg" alt="Mairie Ostwald – 2" onclick="openLightbox(this)" />
+            <img src="images/5.%20Peinture%20traditionnel/2.%20Mairie%20Ostwald%202024/3_Ostwald_M_Apres.jpg" alt="Mairie Ostwald – 3" onclick="openLightbox(this)" />
+            <img src="images/5.%20Peinture%20traditionnel/2.%20Mairie%20Ostwald%202024/4_Ostwald_M_Apres.jpg" alt="Mairie Ostwald – 4" onclick="openLightbox(this)" />
+            <img src="images/5.%20Peinture%20traditionnel/2.%20Mairie%20Ostwald%202024/6_Ostwald_M_Apres.jpg" alt="Mairie Ostwald – 5" onclick="openLightbox(this)" />
+            <img src="images/5.%20Peinture%20traditionnel/2.%20Mairie%20Ostwald%202024/8_Ostwald_M_Apres.jpg" alt="Mairie Ostwald – 6" onclick="openLightbox(this)" />
+          </div>
+        </div>
+
+        <div class="gallery-project">
+          <h4>Centre d'accueil – Strasbourg (2023)</h4>
+          <div class="gallery-grid">
+            <img src="images/5.%20Peinture%20traditionnel/3.%20Centre%20d'accueil%20Strasbourg%202023/1_Accueil_Avant.jpg" alt="Centre Accueil – 1" onclick="openLightbox(this)" />
+            <img src="images/5.%20Peinture%20traditionnel/3.%20Centre%20d'accueil%20Strasbourg%202023/3_Accueil_Avant.jpg" alt="Centre Accueil – 2" onclick="openLightbox(this)" />
+            <img src="images/5.%20Peinture%20traditionnel/3.%20Centre%20d'accueil%20Strasbourg%202023/5_Accueil_Avant.jpg" alt="Centre Accueil – 3" onclick="openLightbox(this)" />
+            <img src="images/5.%20Peinture%20traditionnel/3.%20Centre%20d'accueil%20Strasbourg%202023/9_Accueil_Avant.jpg" alt="Centre Accueil – 4" onclick="openLightbox(this)" />
+          </div>
+        </div>
+      </div>
+
+      <!-- ── DORURE ── -->
+      <div class="gallery-category" data-cat="dorure">
+        <h3>Dorure</h3>
+
+        <div class="gallery-project">
+          <h4>Tour des Fripons – Ammerschwihr (2018)</h4>
+          <div class="gallery-grid">
+            <img src="images/6.%20Dorure/1.%20Tour%20des%20Fripons%20Ammerschwihr%202018/1_Ammerschwihr_Avant.jpg" alt="Ammerschwihr – Avant 1" onclick="openLightbox(this)" />
+            <img src="images/6.%20Dorure/1.%20Tour%20des%20Fripons%20Ammerschwihr%202018/13_Ammerschwihr_Apres.jpg" alt="Ammerschwihr – Après 1" onclick="openLightbox(this)" />
+            <img src="images/6.%20Dorure/1.%20Tour%20des%20Fripons%20Ammerschwihr%202018/2_Ammerschwihr_Avant.jpg" alt="Ammerschwihr – Avant 2" onclick="openLightbox(this)" />
+            <img src="images/6.%20Dorure/1.%20Tour%20des%20Fripons%20Ammerschwihr%202018/14_Ammerschwihr_Apres.jpg" alt="Ammerschwihr – Après 2" onclick="openLightbox(this)" />
+            <img src="images/6.%20Dorure/1.%20Tour%20des%20Fripons%20Ammerschwihr%202018/5_Ammerschwihr_Pendant.jpg" alt="Ammerschwihr – Pendant" onclick="openLightbox(this)" />
+            <img src="images/6.%20Dorure/1.%20Tour%20des%20Fripons%20Ammerschwihr%202018/16_Ammerschwihr_Apres.jpg" alt="Ammerschwihr – Après 3" onclick="openLightbox(this)" />
+          </div>
+        </div>
+
+        <div class="gallery-project">
+          <h4>Église d'Ingenheim (2014)</h4>
+          <div class="gallery-grid">
+            <img src="images/6.%20Dorure/2.%20Eglise%20Ingenheim%202014/1_Ingenheim_Avant.jpg" alt="Ingenheim – Avant 1" onclick="openLightbox(this)" />
+            <img src="images/6.%20Dorure/2.%20Eglise%20Ingenheim%202014/4_Ingenheim_Apres.jpg" alt="Ingenheim – Après 1" onclick="openLightbox(this)" />
+            <img src="images/6.%20Dorure/2.%20Eglise%20Ingenheim%202014/6_Ingenheim_Avant.jpg" alt="Ingenheim – Avant 2" onclick="openLightbox(this)" />
+            <img src="images/6.%20Dorure/2.%20Eglise%20Ingenheim%202014/5_Ingenheim_Apres.jpg" alt="Ingenheim – Après 2" onclick="openLightbox(this)" />
+            <img src="images/6.%20Dorure/2.%20Eglise%20Ingenheim%202014/2_Ingenheim_Pendant.jpg" alt="Ingenheim – Pendant" onclick="openLightbox(this)" />
+            <img src="images/6.%20Dorure/2.%20Eglise%20Ingenheim%202014/9_Ingenheim_Apres.jpg" alt="Ingenheim – Après 3" onclick="openLightbox(this)" />
+          </div>
+        </div>
+
+        <div class="gallery-project">
+          <h4>Église de Kuttolsheim (2013)</h4>
+          <div class="gallery-grid">
+            <img src="images/6.%20Dorure/3.%20Eglise%20Kuttolsheim%202013/1_Kuttolsheim_Avant.jpg" alt="Kuttolsheim – Avant 1" onclick="openLightbox(this)" />
+            <img src="images/6.%20Dorure/3.%20Eglise%20Kuttolsheim%202013/3_Kuttolsheim_Apres.jpg" alt="Kuttolsheim – Après 1" onclick="openLightbox(this)" />
+            <img src="images/6.%20Dorure/3.%20Eglise%20Kuttolsheim%202013/2_Kuttolsheim_Avant.jpg" alt="Kuttolsheim – Avant 2" onclick="openLightbox(this)" />
+            <img src="images/6.%20Dorure/3.%20Eglise%20Kuttolsheim%202013/4_Kuttolsheim_Apres.jpg" alt="Kuttolsheim – Après 2" onclick="openLightbox(this)" />
+          </div>
+        </div>
+
+        <div class="gallery-project">
+          <h4>BNU – Strasbourg (2013)</h4>
+          <div class="gallery-grid">
+            <img src="images/6.%20Dorure/4.%20BNU%20Strasbourg%202013/1_BNU_Avant.jpg" alt="BNU Dorure – Avant" onclick="openLightbox(this)" />
+            <img src="images/6.%20Dorure/4.%20BNU%20Strasbourg%202013/3_BNU_Apres.jpg" alt="BNU Dorure – Après 1" onclick="openLightbox(this)" />
+            <img src="images/6.%20Dorure/4.%20BNU%20Strasbourg%202013/2_BNU_Pendant.jpg" alt="BNU Dorure – Pendant" onclick="openLightbox(this)" />
+            <img src="images/6.%20Dorure/4.%20BNU%20Strasbourg%202013/4_BNU_Apres.jpg" alt="BNU Dorure – Après 2" onclick="openLightbox(this)" />
+            <img src="images/6.%20Dorure/4.%20BNU%20Strasbourg%202013/5_BNU_Apres.jpg" alt="BNU Dorure – Après 3" onclick="openLightbox(this)" />
+          </div>
+        </div>
+
+        <div class="gallery-project">
+          <h4>Beffroi de Thionville (2013)</h4>
+          <div class="gallery-grid">
+            <img src="images/6.%20Dorure/5.%20Beffroi%20Thionville%202013/1_Thionville_Avant.jpg" alt="Thionville – Avant" onclick="openLightbox(this)" />
+            <img src="images/6.%20Dorure/5.%20Beffroi%20Thionville%202013/3_Thionville_Apres.jpg" alt="Thionville – Après 1" onclick="openLightbox(this)" />
+            <img src="images/6.%20Dorure/5.%20Beffroi%20Thionville%202013/2_Thionville_Pendant.jpg" alt="Thionville – Pendant" onclick="openLightbox(this)" />
+            <img src="images/6.%20Dorure/5.%20Beffroi%20Thionville%202013/4_Thionville_Apres.jpg" alt="Thionville – Après 2" onclick="openLightbox(this)" />
+          </div>
+        </div>
+      </div>
+
+      <!-- ── SONDAGE & ÉTUDE ── -->
+      <div class="gallery-category" data-cat="sondage">
+        <h3>Sondage &amp; Étude</h3>
+
+        <div class="gallery-project">
+          <h4>Synagogue – Hegenheim (2021)</h4>
+          <div class="gallery-grid">
+            <img src="images/7.%20Sondage%20%26%20%C3%A9tude/1.%20Synagogue%20Hegenheim%202021/1_Hegenheim_Avant.jpg" alt="Hegenheim – Avant" onclick="openLightbox(this)" />
+            <img src="images/7.%20Sondage%20%26%20%C3%A9tude/1.%20Synagogue%20Hegenheim%202021/4_Hegenheim_Apres.png" alt="Hegenheim – Après 1" onclick="openLightbox(this)" />
+            <img src="images/7.%20Sondage%20%26%20%C3%A9tude/1.%20Synagogue%20Hegenheim%202021/2_Hegenheim_Pendant.jpg" alt="Hegenheim – Pendant" onclick="openLightbox(this)" />
+            <img src="images/7.%20Sondage%20%26%20%C3%A9tude/1.%20Synagogue%20Hegenheim%202021/5_Hegenheim_Apres.png" alt="Hegenheim – Après 2" onclick="openLightbox(this)" />
+            <img src="images/7.%20Sondage%20%26%20%C3%A9tude/1.%20Synagogue%20Hegenheim%202021/3_Hegenheim_Pendant.jpg" alt="Hegenheim – Pendant 2" onclick="openLightbox(this)" />
+            <img src="images/7.%20Sondage%20%26%20%C3%A9tude/1.%20Synagogue%20Hegenheim%202021/6_Hegenheim_Apres.png" alt="Hegenheim – Après 3" onclick="openLightbox(this)" />
+          </div>
+        </div>
+
+        <div class="gallery-project">
+          <h4>Hôtel de Ville – Ferrette</h4>
+          <div class="gallery-grid">
+            <img src="images/7.%20Sondage%20%26%20%C3%A9tude/2.%20H%C3%B4tel%20de%20ville%20Ferrette/1_Ferrette_Avant.jpg" alt="Ferrette – Avant" onclick="openLightbox(this)" />
+            <img src="images/7.%20Sondage%20%26%20%C3%A9tude/2.%20H%C3%B4tel%20de%20ville%20Ferrette/4_Ferrette_Apres.png" alt="Ferrette – Après 1" onclick="openLightbox(this)" />
+            <img src="images/7.%20Sondage%20%26%20%C3%A9tude/2.%20H%C3%B4tel%20de%20ville%20Ferrette/2_Ferrette_Pendant.jpg" alt="Ferrette – Pendant" onclick="openLightbox(this)" />
+            <img src="images/7.%20Sondage%20%26%20%C3%A9tude/2.%20H%C3%B4tel%20de%20ville%20Ferrette/5_Ferrette_Apres.png" alt="Ferrette – Après 2" onclick="openLightbox(this)" />
+          </div>
+        </div>
+
+        <div class="gallery-project">
+          <h4>Chapelle de Mollkirch (2014)</h4>
+          <div class="gallery-grid">
+            <img src="images/7.%20Sondage%20%26%20%C3%A9tude/3.%20Chapelle%20Mollkirch%202014/1_Mollkirch_Avant.jpg" alt="Mollkirch – Avant" onclick="openLightbox(this)" />
+            <img src="images/7.%20Sondage%20%26%20%C3%A9tude/3.%20Chapelle%20Mollkirch%202014/2_Mollkirch_Apres.jpg" alt="Mollkirch – Après 1" onclick="openLightbox(this)" />
+            <img src="images/7.%20Sondage%20%26%20%C3%A9tude/3.%20Chapelle%20Mollkirch%202014/4_Mollkirch_Apres.jpg" alt="Mollkirch – Après 2" onclick="openLightbox(this)" />
+            <img src="images/7.%20Sondage%20%26%20%C3%A9tude/3.%20Chapelle%20Mollkirch%202014/6_Mollkirch_Apres.jpg" alt="Mollkirch – Après 3" onclick="openLightbox(this)" />
+          </div>
+        </div>
+
+        <div class="gallery-project">
+          <h4>Château de Thanvillé (2013)</h4>
+          <div class="gallery-grid">
+            <img src="images/7.%20Sondage%20%26%20%C3%A9tude/4.%20Ch%C3%A2teau%20Thanvill%C3%A9%202013/1_Thanville_Avant.jpg" alt="Thanvillé – Avant" onclick="openLightbox(this)" />
+            <img src="images/7.%20Sondage%20%26%20%C3%A9tude/4.%20Ch%C3%A2teau%20Thanvill%C3%A9%202013/3_Thanville_Apres.jpg" alt="Thanvillé – Après 1" onclick="openLightbox(this)" />
+            <img src="images/7.%20Sondage%20%26%20%C3%A9tude/4.%20Ch%C3%A2teau%20Thanvill%C3%A9%202013/2_Thanville_Pendant.jpg" alt="Thanvillé – Pendant" onclick="openLightbox(this)" />
+            <img src="images/7.%20Sondage%20%26%20%C3%A9tude/4.%20Ch%C3%A2teau%20Thanvill%C3%A9%202013/4_Thanville_Apres.jpg" alt="Thanvillé – Après 2" onclick="openLightbox(this)" />
+            <img src="images/7.%20Sondage%20%26%20%C3%A9tude/4.%20Ch%C3%A2teau%20Thanvill%C3%A9%202013/5_Thanville_Apres.jpg" alt="Thanvillé – Après 3" onclick="openLightbox(this)" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="background-color: var(--color-bg-dark); padding: 3rem 2rem; text-align: center; border-top: 3px solid var(--color-secondary);">
+    <h2 style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--color-primary-dark); margin-bottom: 0.8rem;">
+      Un projet similaire ?
+    </h2>
+    <p style="color: var(--color-text-light); margin-bottom: 2rem;">
+      Contactez-nous pour un devis gratuit.
+    </p>
+    <a href="contact.html" class="btn btn-primary">Nous contacter</a>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="index.html">Accueil</a>
+        <a href="realisations.html">Nos Réalisations</a>
+        <a href="la-societe.html">La Société</a>
+        <a href="nos-engagements.html">Nos Engagements</a>
+        <a href="services.html">Services</a>
+        <a href="references.html">Références</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">© 2024 Peintures Ecodurables S.A.S. – 9a rue des Alliés, 67114 Eschau – SIRET 533 693 503 00013</p>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightboxOnBg(event)">
+    <button class="lightbox__close" onclick="closeLightbox()">✕</button>
+    <button class="lightbox__nav lightbox__prev" onclick="lightboxNav(-1)">&#8249;</button>
+    <img class="lightbox__img" id="lightbox-img" src="" alt="" />
+    <button class="lightbox__nav lightbox__next" onclick="lightboxNav(1)">&#8250;</button>
+    <p class="lightbox__caption" id="lightbox-caption"></p>
+  </div>
+
+  <script>
+    function toggleMenu() { document.getElementById('main-nav').classList.toggle('open'); }
+
+    // Wrap gallery images with label overlay (Avant / Après / Pendant)
+    document.querySelectorAll('.gallery-grid img').forEach(img => {
+      const wrap = document.createElement('div');
+      wrap.className = 'img-wrap';
+      img.parentNode.insertBefore(wrap, img);
+      wrap.appendChild(img);
+      const alt = img.alt || '';
+      let label = '';
+      if (/avant/i.test(alt)) label = 'Avant';
+      else if (/apr[eè]s/i.test(alt)) label = 'Après';
+      else if (/pendant/i.test(alt)) label = 'Pendant';
+      if (label) {
+        const span = document.createElement('span');
+        span.className = 'img-label';
+        span.textContent = label;
+        wrap.appendChild(span);
+      }
+    });
+
+    // Filtres
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.gallery-category').forEach(cat => {
+          cat.style.display = (filter === 'all' || cat.dataset.cat === filter) ? '' : 'none';
+        });
+      });
+    });
+
+    // Lightbox
+    let allImgs = [], currentIdx = 0;
+
+    function openLightbox(img) {
+      allImgs = Array.from(document.querySelectorAll('.gallery-category:not([style*="none"]) .gallery-grid img'));
+      currentIdx = allImgs.indexOf(img);
+      if (currentIdx === -1) { allImgs = [img]; currentIdx = 0; }
+      showLightboxImg();
+      document.getElementById('lightbox').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function showLightboxImg() {
+      const img = allImgs[currentIdx];
+      document.getElementById('lightbox-img').src = img.src;
+      document.getElementById('lightbox-caption').textContent = img.alt + ' (' + (currentIdx + 1) + ' / ' + allImgs.length + ')';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function closeLightboxOnBg(e) {
+      if (e.target === document.getElementById('lightbox')) closeLightbox();
+    }
+
+    function lightboxNav(dir) {
+      currentIdx = (currentIdx + dir + allImgs.length) % allImgs.length;
+      showLightboxImg();
+    }
+
+    document.addEventListener('keydown', e => {
+      if (!document.getElementById('lightbox').classList.contains('open')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowRight') lightboxNav(1);
+      if (e.key === 'ArrowLeft') lightboxNav(-1);
+    });
+  </script>
+</body>
+</html>

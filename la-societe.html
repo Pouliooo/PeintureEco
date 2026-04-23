@@ -12,7 +12,7 @@
   <header>
     <div class="header-inner">
       <a class="logo" href="index.html">
-        <img src="logo.jpg" alt="Peintures Ecodurables" />
+        <img src="images/1.%20Accueil/1_Logo%20PED.png" alt="Peintures Ecodurables" />
       </a>
       <button class="menu-toggle" aria-label="Menu" onclick="toggleMenu()">
         <span></span><span></span><span></span>
@@ -20,6 +20,7 @@
       <nav id="main-nav">
         <ul>
           <li><a href="index.html">Accueil</a></li>
+          <li><a href="realisations.html">Nos Réalisations</a></li>
           <li><a href="la-societe.html" class="active">La Société</a></li>
           <li><a href="nos-engagements.html">Nos Engagements</a></li>
           <li><a href="services.html">Services</a></li>
@@ -112,13 +113,22 @@
       <p class="section-tag">Notre travail</p>
       <h2 class="section-title">Quelques réalisations</h2>
       <div class="divider"></div>
-      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
-        <div class="photo-placeholder"><span>📷</span>Réalisation 1</div>
-        <div class="photo-placeholder"><span>📷</span>Réalisation 2</div>
-        <div class="photo-placeholder"><span>📷</span>Réalisation 3</div>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.6rem;">
+        <div style="position:relative; overflow:hidden;">
+          <img src="images/2.%20Monument%20historique/4.%20Salon%20de%20l'Imp%C3%A9ratrice%20du%20Palais%20de%20Rhin%20Strasbourg%202017/5_Imperatrice_Apres.jpg" alt="Salon de l'Impératrice – Palais du Rhin" onclick="openLightbox(this)" style="width:100%; height:200px; object-fit:cover; cursor:pointer; display:block;" />
+          <span style="position:absolute;bottom:0.5rem;left:0.5rem;background:rgba(0,0,0,0.5);color:#fff;font-size:0.7rem;padding:0.2rem 0.5rem;">Palais du Rhin, Strasbourg</span>
+        </div>
+        <div style="position:relative; overflow:hidden;">
+          <img src="images/6.%20Dorure/1.%20Tour%20des%20Fripons%20Ammerschwihr%202018/14_Ammerschwihr_Apres.jpg" alt="Tour des Fripons – Dorure Ammerschwihr" onclick="openLightbox(this)" style="width:100%; height:200px; object-fit:cover; cursor:pointer; display:block;" />
+          <span style="position:absolute;bottom:0.5rem;left:0.5rem;background:rgba(0,0,0,0.5);color:#fff;font-size:0.7rem;padding:0.2rem 0.5rem;">Tour des Fripons, Ammerschwihr</span>
+        </div>
+        <div style="position:relative; overflow:hidden;">
+          <img src="images/3.%20Patrimoine%20ancien/2.%20Eglise%20Achenheim%202019_20/10_Achenheim_Apres.jpg" alt="Église d'Achenheim" onclick="openLightbox(this)" style="width:100%; height:200px; object-fit:cover; cursor:pointer; display:block;" />
+          <span style="position:absolute;bottom:0.5rem;left:0.5rem;background:rgba(0,0,0,0.5);color:#fff;font-size:0.7rem;padding:0.2rem 0.5rem;">Église d'Achenheim</span>
+        </div>
       </div>
-      <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--color-text-light); font-style: italic; text-align: center;">
-        Photos à venir – retrouvez également notre <a href="references.html" style="color: var(--color-primary);">certificat de référence</a>.
+      <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--color-text-light); text-align: center;">
+        <a href="realisations.html" style="color: var(--color-primary); font-weight: 700; text-decoration: none;">Voir toutes nos réalisations →</a>
       </p>
     </div>
   </section>
@@ -148,10 +158,23 @@
     </div>
   </footer>
 
+  <div class="lightbox" id="lightbox" onclick="closeLightboxOnBg(event)">
+    <button class="lightbox__close" onclick="closeLightbox()">✕</button>
+    <img class="lightbox__img" id="lightbox-img" src="" alt="" />
+    <p class="lightbox__caption" id="lightbox-caption"></p>
+  </div>
+
   <script>
-    function toggleMenu() {
-      document.getElementById('main-nav').classList.toggle('open');
+    function toggleMenu() { document.getElementById('main-nav').classList.toggle('open'); }
+    function openLightbox(img) {
+      document.getElementById('lightbox-img').src = img.src;
+      document.getElementById('lightbox-caption').textContent = img.alt;
+      document.getElementById('lightbox').classList.add('open');
+      document.body.style.overflow = 'hidden';
     }
+    function closeLightbox() { document.getElementById('lightbox').classList.remove('open'); document.body.style.overflow = ''; }
+    function closeLightboxOnBg(e) { if (e.target === document.getElementById('lightbox')) closeLightbox(); }
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
   </script>
 </body>
 </html>

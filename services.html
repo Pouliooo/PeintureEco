@@ -12,7 +12,7 @@
   <header>
     <div class="header-inner">
       <a class="logo" href="index.html">
-        <img src="logo.jpg" alt="Peintures Ecodurables" />
+        <img src="images/1.%20Accueil/1_Logo%20PED.png" alt="Peintures Ecodurables" />
       </a>
       <button class="menu-toggle" aria-label="Menu" onclick="toggleMenu()">
         <span></span><span></span><span></span>
@@ -20,6 +20,7 @@
       <nav id="main-nav">
         <ul>
           <li><a href="index.html">Accueil</a></li>
+          <li><a href="realisations.html">Nos Réalisations</a></li>
           <li><a href="la-societe.html">La Société</a></li>
           <li><a href="nos-engagements.html">Nos Engagements</a></li>
           <li><a href="services.html" class="active">Services</a></li>
@@ -79,8 +80,17 @@
             </ul>
           </div>
           <div>
-            <div class="photo-placeholder"><span>📷</span>Photo intérieur 1</div>
-            <div class="photo-placeholder" style="margin-top: 1rem;"><span>📷</span>Photo intérieur 2</div>
+            <div class="before-after">
+              <div class="before-after__item">
+                <img src="images/4.%20Maison%20alsacienne/1.%20Fegersheim%202018_19/1_Fegersheim_Avant.jpg" alt="Avant – Fegersheim" onclick="openLightbox(this)" />
+                <span class="before-after__label">Avant</span>
+              </div>
+              <div class="before-after__item">
+                <img src="images/4.%20Maison%20alsacienne/1.%20Fegersheim%202018_19/9_Fegersheim_Apres.jpg" alt="Après – Fegersheim" onclick="openLightbox(this)" />
+                <span class="before-after__label">Après</span>
+              </div>
+            </div>
+            <p style="font-size: 0.8rem; color: var(--color-text-light); margin-top: 0.5rem; text-align:center;">Maison alsacienne, Fegersheim (2018–2019)</p>
           </div>
         </div>
       </div>
@@ -111,8 +121,17 @@
             </ul>
           </div>
           <div>
-            <div class="photo-placeholder"><span>📷</span>Décoration 1 – tadelakt</div>
-            <div class="photo-placeholder" style="margin-top: 1rem;"><span>📷</span>Décoration 2 – dorure</div>
+            <div class="before-after">
+              <div class="before-after__item">
+                <img src="images/6.%20Dorure/1.%20Tour%20des%20Fripons%20Ammerschwihr%202018/1_Ammerschwihr_Avant.jpg" alt="Avant – Dorure Ammerschwihr" onclick="openLightbox(this)" />
+                <span class="before-after__label">Avant</span>
+              </div>
+              <div class="before-after__item">
+                <img src="images/6.%20Dorure/1.%20Tour%20des%20Fripons%20Ammerschwihr%202018/13_Ammerschwihr_Apres.jpg" alt="Après – Dorure Ammerschwihr" onclick="openLightbox(this)" />
+                <span class="before-after__label">Après</span>
+              </div>
+            </div>
+            <p style="font-size: 0.8rem; color: var(--color-text-light); margin-top: 0.5rem; text-align:center;">Tour des Fripons, Ammerschwihr – Dorure (2018)</p>
           </div>
         </div>
       </div>
@@ -138,8 +157,17 @@
             </ul>
           </div>
           <div>
-            <div class="photo-placeholder"><span>📷</span>Façade avant/après</div>
-            <div class="photo-placeholder" style="margin-top: 1rem;"><span>📷</span>Monument historique</div>
+            <div class="before-after">
+              <div class="before-after__item">
+                <img src="images/2.%20Monument%20historique/3.%20Chapelle%20Otterswiller%202016_18/1_Otterswiller_Avant.jpg" alt="Avant – Chapelle Otterswiller" onclick="openLightbox(this)" />
+                <span class="before-after__label">Avant</span>
+              </div>
+              <div class="before-after__item">
+                <img src="images/2.%20Monument%20historique/3.%20Chapelle%20Otterswiller%202016_18/7_Otterswiller_Apres.jpg" alt="Après – Chapelle Otterswiller" onclick="openLightbox(this)" />
+                <span class="before-after__label">Après</span>
+              </div>
+            </div>
+            <p style="font-size: 0.8rem; color: var(--color-text-light); margin-top: 0.5rem; text-align:center;">Chapelle d'Otterswiller – Ravalement (2016–2018)</p>
           </div>
         </div>
       </div>
@@ -172,10 +200,39 @@
     </div>
   </footer>
 
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightboxOnBg(event)">
+    <button class="lightbox__close" onclick="closeLightbox()">✕</button>
+    <button class="lightbox__nav lightbox__prev" onclick="lightboxNav(-1)">&#8249;</button>
+    <img class="lightbox__img" id="lightbox-img" src="" alt="" />
+    <button class="lightbox__nav lightbox__next" onclick="lightboxNav(1)">&#8250;</button>
+    <p class="lightbox__caption" id="lightbox-caption"></p>
+  </div>
+
   <script>
-    function toggleMenu() {
-      document.getElementById('main-nav').classList.toggle('open');
+    function toggleMenu() { document.getElementById('main-nav').classList.toggle('open'); }
+    let allImgs = [], currentIdx = 0;
+    function openLightbox(img) {
+      allImgs = Array.from(document.querySelectorAll('.before-after__item img'));
+      currentIdx = allImgs.indexOf(img);
+      showLightboxImg();
+      document.getElementById('lightbox').classList.add('open');
+      document.body.style.overflow = 'hidden';
     }
+    function showLightboxImg() {
+      const img = allImgs[currentIdx];
+      document.getElementById('lightbox-img').src = img.src;
+      document.getElementById('lightbox-caption').textContent = img.alt;
+    }
+    function closeLightbox() { document.getElementById('lightbox').classList.remove('open'); document.body.style.overflow = ''; }
+    function closeLightboxOnBg(e) { if (e.target === document.getElementById('lightbox')) closeLightbox(); }
+    function lightboxNav(dir) { currentIdx = (currentIdx + dir + allImgs.length) % allImgs.length; showLightboxImg(); }
+    document.addEventListener('keydown', e => {
+      if (!document.getElementById('lightbox').classList.contains('open')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowRight') lightboxNav(1);
+      if (e.key === 'ArrowLeft') lightboxNav(-1);
+    });
   </script>
 </body>
 </html>
