@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services – Peintures Ecodurables</title>
+  <meta name="description" content="Découvrez les services de Peintures Ecodurables : peintures intérieures, décoration naturelle, ravalement de façades, enduits à la chaux." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <img src="logo.jpg" alt="Peintures Ecodurables" />
+      </a>
+      <button class="menu-toggle" aria-label="Menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="la-societe.html">La Société</a></li>
+          <li><a href="nos-engagements.html">Nos Engagements</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="references.html">Références</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <h1>Nos Services</h1>
+    <p>Intérieur · Décoration · Extérieur</p>
+  </div>
+
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="index.html">Accueil</a>
+      <span class="sep">›</span>
+      <span>Services</span>
+    </div>
+  </div>
+
+  <!-- ANCRES NAVIGATION -->
+  <section style="padding: 1.5rem 2rem; background-color: var(--color-bg-dark);">
+    <div class="container" style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+      <a href="#interieur" style="color: var(--color-primary); font-weight: 700; font-size: 0.88rem; text-decoration: none; letter-spacing: 0.06em; text-transform: uppercase;">🏠 Intérieur</a>
+      <span style="color: var(--color-text-light);">|</span>
+      <a href="#decoration" style="color: var(--color-primary); font-weight: 700; font-size: 0.88rem; text-decoration: none; letter-spacing: 0.06em; text-transform: uppercase;">🎨 Décoration</a>
+      <span style="color: var(--color-text-light);">|</span>
+      <a href="#exterieur" style="color: var(--color-primary); font-weight: 700; font-size: 0.88rem; text-decoration: none; letter-spacing: 0.06em; text-transform: uppercase;">🏛️ Extérieur</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <!-- INTÉRIEUR -->
+      <div class="service-section" id="interieur">
+        <div class="service-layout">
+          <div>
+            <p class="section-tag">Prestations intérieures</p>
+            <h2>Intérieur</h2>
+            <div class="divider"></div>
+            <p style="color: var(--color-text-light); margin-bottom: 1.5rem; line-height: 1.8;">
+              Nous intervenons sur tous les travaux de peinture intérieure avec un soin particulier
+              apporté à la qualité des finitions et au respect de votre espace.
+            </p>
+            <ul class="styled-list">
+              <li>Peintures intérieures – toutes finitions (mat, satiné, brillant)</li>
+              <li>Pose de papiers peints</li>
+              <li>Tissus muraux et revêtements textiles</li>
+              <li>Revêtements de sol souples</li>
+              <li>Moquettes</li>
+              <li>Parquets</li>
+              <li>Entretien et traitement des boiseries</li>
+            </ul>
+          </div>
+          <div>
+            <div class="photo-placeholder"><span>📷</span>Photo intérieur 1</div>
+            <div class="photo-placeholder" style="margin-top: 1rem;"><span>📷</span>Photo intérieur 2</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DÉCORATION -->
+      <div class="service-section" id="decoration">
+        <div class="service-layout reverse">
+          <div>
+            <p class="section-tag">Arts décoratifs</p>
+            <h2>Décoration</h2>
+            <div class="divider"></div>
+            <p style="color: var(--color-text-light); margin-bottom: 1.5rem; line-height: 1.8;">
+              Notre expertise en techniques décoratives anciennes et contemporaines permet de créer
+              des atmosphères uniques, alliant authenticité artisanale et esthétique moderne.
+            </p>
+            <ul class="styled-list">
+              <li>Tadelakts</li>
+              <li>Effets béton ciré</li>
+              <li>Stucs vénitiens</li>
+              <li>Peintures et enduits à la chaux</li>
+              <li>Peintures et enduits à l'argile</li>
+              <li>Patines et glacis</li>
+              <li>Laques</li>
+              <li>Faux bois</li>
+              <li>Faux marbres</li>
+              <li>Dorures à la feuille</li>
+              <li>Effets pierre</li>
+            </ul>
+          </div>
+          <div>
+            <div class="photo-placeholder"><span>📷</span>Décoration 1 – tadelakt</div>
+            <div class="photo-placeholder" style="margin-top: 1rem;"><span>📷</span>Décoration 2 – dorure</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EXTÉRIEUR -->
+      <div class="service-section" id="exterieur">
+        <div class="service-layout">
+          <div>
+            <p class="section-tag">Travaux extérieurs</p>
+            <h2>Extérieur</h2>
+            <div class="divider"></div>
+            <p style="color: var(--color-text-light); margin-bottom: 1.5rem; line-height: 1.8;">
+              Spécialistes de la restauration de façades et de monuments historiques, nous intervenons
+              avec des matériaux adaptés aux contraintes climatiques alsaciennes et aux exigences patrimoniales.
+            </p>
+            <ul class="styled-list">
+              <li>Ravalement de façades</li>
+              <li>Hydrogommage de façades</li>
+              <li>Hydrofugation de façades</li>
+              <li>Isolation thermique par l'extérieur (ITE)</li>
+              <li>Peintures minérales</li>
+              <li>Enduits muraux à la chaux</li>
+            </ul>
+          </div>
+          <div>
+            <div class="photo-placeholder"><span>📷</span>Façade avant/après</div>
+            <div class="photo-placeholder" style="margin-top: 1rem;"><span>📷</span>Monument historique</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="background-color: var(--color-secondary); padding: 3rem 2rem; text-align: center;">
+    <h2 style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--color-white); margin-bottom: 0.8rem;">
+      Un projet ? Demandez votre devis gratuit
+    </h2>
+    <p style="color: rgba(255,255,255,0.85); margin-bottom: 2rem;">
+      Nous étudions chaque demande avec soin et vous répondons rapidement.
+    </p>
+    <a href="contact.html" class="btn btn-outline">Nous contacter</a>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="index.html">Accueil</a>
+        <a href="la-societe.html">La Société</a>
+        <a href="nos-engagements.html">Nos Engagements</a>
+        <a href="services.html">Services</a>
+        <a href="references.html">Références</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">© 2024 Peintures Ecodurables S.A.S. – 9a rue des Alliés, 67114 Eschau – SIRET 533 693 503 00013</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('main-nav').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

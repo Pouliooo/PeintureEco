@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peintures Ecodurables – Artisan peintre en Alsace</title>
+  <meta name="description" content="Peintures Ecodurables, entreprise artisanale alsacienne spécialisée dans les peintures et enduits naturels, la restauration de monuments historiques. Membre FREMAA." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <img src="logo.jpg" alt="Peintures Ecodurables" />
+      </a>
+      <button class="menu-toggle" aria-label="Menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="la-societe.html">La Société</a></li>
+          <li><a href="nos-engagements.html">Nos Engagements</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="references.html">Références</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-badge">Membre de la FREMAA · Maître Artisan</div>
+    <h1>Peintures Ecodurables</h1>
+    <p>Artisan peintre alsacien spécialisé dans les techniques naturelles et anciennes, au service du patrimoine depuis 2011.</p>
+    <div class="hero-buttons">
+      <a href="contact.html" class="btn">Demander un devis gratuit</a>
+      <a href="la-societe.html" class="btn btn-outline">Découvrir la société</a>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section>
+    <div class="container">
+      <div style="max-width: 760px;">
+        <p class="section-tag">Notre savoir-faire</p>
+        <h2 class="section-title">Techniques ancestrales &amp; produits naturels</h2>
+        <div class="divider"></div>
+        <p style="color: var(--color-text-light); font-size: 1.05rem; line-height: 1.8;">
+          Fondée en 2011 par Michel Eschlimann, maître artisan fort d'une expérience de plus de trente ans,
+          Peintures Ecodurables met son expertise au service de la restauration de monuments historiques,
+          de bâtis traditionnels et de particuliers exigeants. Nous privilégions des produits respectueux
+          de la nature et de la santé, issus de fournisseurs français ou limitrophes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES OVERVIEW -->
+  <section class="bg-alt">
+    <div class="container">
+      <p class="section-tag" style="text-align:center;">Ce que nous faisons</p>
+      <h2 class="section-title" style="text-align:center;">Nos prestations</h2>
+      <div class="divider center"></div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon">🏠</div>
+          <h3>Intérieur</h3>
+          <p>Peintures, papiers peints, tissus muraux, revêtements de sol, moquettes, parquets, entretien de boiseries.</p>
+          <a href="services.html#interieur" class="card-link">En savoir plus →</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎨</div>
+          <h3>Décoration</h3>
+          <p>Tadelakts, effets béton, stucs, peintures et enduits à la chaux ou à l'argile, dorures, faux bois, faux marbres.</p>
+          <a href="services.html#decoration" class="card-link">En savoir plus →</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">🏛️</div>
+          <h3>Extérieur</h3>
+          <p>Ravalement de façades, hydrogommage, isolation thermique par l'extérieur, peintures minérales, enduits à la chaux.</p>
+          <a href="services.html#exterieur" class="card-link">En savoir plus →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENGAGEMENTS APERÇU -->
+  <section>
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+        <div>
+          <p class="section-tag">Pourquoi nous choisir</p>
+          <h2 class="section-title">Des valeurs fortes, un travail d'exception</h2>
+          <div class="divider"></div>
+          <ul class="styled-list">
+            <li>Maîtrise des techniques anciennes alliées aux produits actuels</li>
+            <li>Devis gratuits sans engagement</li>
+            <li>Garantie décennale sur toutes nos réalisations</li>
+            <li>Fournisseurs français ou limitrophes</li>
+            <li>Préservation de l'environnement et de la santé</li>
+            <li>Tri sélectif des déchets sur chantier</li>
+          </ul>
+          <a href="nos-engagements.html" class="btn btn-primary" style="margin-top: 2rem;">Tous nos engagements</a>
+        </div>
+        <div>
+          <div class="photo-placeholder" style="height: 320px;">
+            <span>📷</span>
+            Photo de chantier ou équipe
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENTS -->
+  <section class="bg-alt">
+    <div class="container" style="text-align: center;">
+      <p class="section-tag">Ils nous font confiance</p>
+      <h2 class="section-title">Nos clients</h2>
+      <div class="divider center"></div>
+      <p style="color: var(--color-text-light); max-width: 700px; margin: 0 auto 2rem; font-size: 0.95rem;">
+        Nous intervenons pour une clientèle variée, des institutions publiques aux particuliers, en passant
+        par les architectes du patrimoine et les collectivités territoriales.
+      </p>
+      <div style="display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: center; max-width: 800px; margin: 0 auto;">
+        <span style="background: var(--color-white); padding: 0.5rem 1.2rem; font-size: 0.85rem; color: var(--color-text-light); box-shadow: 0 1px 4px rgba(0,0,0,0.08);">DRAC</span>
+        <span style="background: var(--color-white); padding: 0.5rem 1.2rem; font-size: 0.85rem; color: var(--color-text-light); box-shadow: 0 1px 4px rgba(0,0,0,0.08);">Architectes du Patrimoine</span>
+        <span style="background: var(--color-white); padding: 0.5rem 1.2rem; font-size: 0.85rem; color: var(--color-text-light); box-shadow: 0 1px 4px rgba(0,0,0,0.08);">Architectes des Bâtiments de France</span>
+        <span style="background: var(--color-white); padding: 0.5rem 1.2rem; font-size: 0.85rem; color: var(--color-text-light); box-shadow: 0 1px 4px rgba(0,0,0,0.08);">Monuments Historiques</span>
+        <span style="background: var(--color-white); padding: 0.5rem 1.2rem; font-size: 0.85rem; color: var(--color-text-light); box-shadow: 0 1px 4px rgba(0,0,0,0.08);">Collectivités territoriales</span>
+        <span style="background: var(--color-white); padding: 0.5rem 1.2rem; font-size: 0.85rem; color: var(--color-text-light); box-shadow: 0 1px 4px rgba(0,0,0,0.08);">Conseils de Fabriques</span>
+        <span style="background: var(--color-white); padding: 0.5rem 1.2rem; font-size: 0.85rem; color: var(--color-text-light); box-shadow: 0 1px 4px rgba(0,0,0,0.08);">Paroisses</span>
+        <span style="background: var(--color-white); padding: 0.5rem 1.2rem; font-size: 0.85rem; color: var(--color-text-light); box-shadow: 0 1px 4px rgba(0,0,0,0.08);">Syndics de copropriétés</span>
+        <span style="background: var(--color-white); padding: 0.5rem 1.2rem; font-size: 0.85rem; color: var(--color-text-light); box-shadow: 0 1px 4px rgba(0,0,0,0.08);">Particuliers</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="background-color: var(--color-bg-dark); padding: 3.5rem 2rem; text-align: center; border-top: 3px solid var(--color-secondary);">
+    <h2 style="font-family: var(--font-heading); font-size: 1.9rem; color: var(--color-primary-dark); margin-bottom: 0.8rem;">
+      Un projet de rénovation ?
+    </h2>
+    <p style="color: var(--color-text-light); margin-bottom: 2rem; font-size: 1rem;">
+      Contactez-nous pour un devis gratuit. Nous étudions chaque projet avec soin.
+    </p>
+    <a href="contact.html" class="btn btn-primary">Nous contacter</a>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="index.html">Accueil</a>
+        <a href="la-societe.html">La Société</a>
+        <a href="nos-engagements.html">Nos Engagements</a>
+        <a href="services.html">Services</a>
+        <a href="references.html">Références</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">© 2024 Peintures Ecodurables S.A.S. – 9a rue des Alliés, 67114 Eschau – SIRET 533 693 503 00013</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('main-nav').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

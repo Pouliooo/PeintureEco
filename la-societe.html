@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Société – Peintures Ecodurables</title>
+  <meta name="description" content="Fondée en 2011 par Michel Eschlimann, Peintures Ecodurables est une entreprise artisanale alsacienne spécialisée dans les peintures et enduits naturels." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <img src="logo.jpg" alt="Peintures Ecodurables" />
+      </a>
+      <button class="menu-toggle" aria-label="Menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="la-societe.html" class="active">La Société</a></li>
+          <li><a href="nos-engagements.html">Nos Engagements</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="references.html">Références</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <h1>La Société</h1>
+    <p>Une entreprise artisanale alsacienne au service du patrimoine</p>
+  </div>
+
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="index.html">Accueil</a>
+      <span class="sep">›</span>
+      <span>La Société</span>
+    </div>
+  </div>
+
+  <!-- PRÉSENTATION -->
+  <section>
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+        <div>
+          <p class="section-tag">Qui sommes-nous</p>
+          <h2 class="section-title">Une expertise artisanale depuis 2011</h2>
+          <div class="divider"></div>
+          <p style="color: var(--color-text-light); margin-bottom: 1.2rem; line-height: 1.85;">
+            Peintures Ecodurables est une entreprise artisanale alsacienne d'application de peintures et
+            d'enduits naturels en intérieur et extérieur. Elle a été fondée en <strong>2011 par Michel Eschlimann</strong>,
+            maître artisan fort d'une expérience d'une <strong>trentaine d'années</strong> dans la maîtrise
+            des techniques employées dans la restauration des Monuments Historiques.
+          </p>
+          <p style="color: var(--color-text-light); line-height: 1.85;">
+            Membre de la <strong>FREMAA (Fédération Régionale des Métiers d'Art)</strong>, notre société
+            propose ses services de rénovation à base de produits naturels et de techniques anciennes,
+            appliquées aussi bien aux monuments historiques qu'aux bâtis traditionnels.
+          </p>
+        </div>
+        <div>
+          <div class="photo-placeholder" style="height: 340px;">
+            <span>📷</span>
+            Photo de Michel Eschlimann ou de l'équipe
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOS CLIENTS -->
+  <section class="bg-alt">
+    <div class="container">
+      <p class="section-tag">Notre clientèle</p>
+      <h2 class="section-title">Nous mettons notre savoir-faire au service de…</h2>
+      <div class="divider"></div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+        <div>
+          <h3 style="font-family: var(--font-heading); color: var(--color-primary-dark); margin-bottom: 1rem; font-size: 1.2rem;">Institutions &amp; Patrimoine</h3>
+          <ul class="styled-list">
+            <li>DRAC – Directions Régionales des Affaires Culturelles</li>
+            <li>Architectes du Patrimoine</li>
+            <li>Architectes des Bâtiments de France</li>
+            <li>Architectes des Monuments Historiques</li>
+            <li>Collectivités territoriales</li>
+            <li>Conseils de Fabriques</li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="font-family: var(--font-heading); color: var(--color-primary-dark); margin-bottom: 1rem; font-size: 1.2rem;">Communautés religieuses &amp; Particuliers</h3>
+          <ul class="styled-list">
+            <li>Paroisses Catholiques</li>
+            <li>Paroisses Protestantes</li>
+            <li>Consistoires israélites</li>
+            <li>Sociétés civiles immobilières</li>
+            <li>Syndics de copropriétés</li>
+            <li>Particuliers</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTO GALERIE PLACEHOLDER -->
+  <section>
+    <div class="container">
+      <p class="section-tag">Notre travail</p>
+      <h2 class="section-title">Quelques réalisations</h2>
+      <div class="divider"></div>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+        <div class="photo-placeholder"><span>📷</span>Réalisation 1</div>
+        <div class="photo-placeholder"><span>📷</span>Réalisation 2</div>
+        <div class="photo-placeholder"><span>📷</span>Réalisation 3</div>
+      </div>
+      <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--color-text-light); font-style: italic; text-align: center;">
+        Photos à venir – retrouvez également notre <a href="references.html" style="color: var(--color-primary);">certificat de référence</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="background-color: var(--color-secondary); padding: 3rem 2rem; text-align: center;">
+    <h2 style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--color-white); margin-bottom: 0.8rem;">
+      Confiez-nous votre projet
+    </h2>
+    <p style="color: rgba(255,255,255,0.85); margin-bottom: 2rem;">
+      Devis gratuit, réponse rapide.
+    </p>
+    <a href="contact.html" class="btn btn-outline">Nous contacter</a>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="index.html">Accueil</a>
+        <a href="la-societe.html">La Société</a>
+        <a href="nos-engagements.html">Nos Engagements</a>
+        <a href="services.html">Services</a>
+        <a href="references.html">Références</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">© 2024 Peintures Ecodurables S.A.S. – 9a rue des Alliés, 67114 Eschau – SIRET 533 693 503 00013</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('main-nav').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
